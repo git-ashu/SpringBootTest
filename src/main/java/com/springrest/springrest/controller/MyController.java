@@ -16,6 +16,11 @@ public class MyController {
 	@Autowired
 	private CourseService CourseService;
 
+	@GetMapping("/")
+	public String home(){
+		return "Welcome to Spring Boot Test Page. Please modify URL[/home;/courses;/courses/101; 201/301]";
+	}
+
 	@GetMapping("/home")
 	public String home(){
 		return "This is Home Page.";
