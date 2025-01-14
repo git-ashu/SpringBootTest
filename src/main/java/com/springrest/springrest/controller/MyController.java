@@ -17,7 +17,7 @@ public class MyController {
 	private CourseService CourseService;
 
 	@GetMapping("/")
-	public String home(){
+	public String root(){
 		return "Welcome to Spring Boot Test Page. Please modify URL[/home;/courses;/courses/101; 201/301]";
 	}
 
